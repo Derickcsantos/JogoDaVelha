@@ -46,7 +46,8 @@ html{
     padding: 1em 0;
     border-radius: 8px;
     background-color: #0a0027;
-    width: 100px;
+    width: 25%;
+    height: 15%;
     color: #ffffff;
     border: none;
     position: relative;
@@ -54,34 +55,79 @@ html{
     display: block;
 }
 
-.popup{
-    background: linear-gradient(135deg, #8052ec, #d161ff);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    z-index: 2;
-    align-items: center;
-    justify-content: center;
-    flex-direction: center;
-    gap: 1em;
-    font-size: 12vmin;
+.popup {
+    text-align: center; /* Centralizar conteúdo horizontalmente */
 }
 
-#new-game{
-    font-size: 1.6em;
-    padding: 0.5em 1em;
+.popup p{
+    margin-bottom: 10px; /* Espaço entre a mensagem e o botão */
+}
+
+.popup button {
+    display: block; /* Tornar o botão um elemento de bloco para ocupar a largura disponível */
+    width: 100%; /* Ocupar toda a largura disponível */
+    max-width: 200px; /* Largura máxima para evitar que o botão fique muito largo */
+    margin: 0 auto; /* Centralizar o botão horizontalmente */
+    padding: 10px;
+    font-size: 16px;
     background-color: #0a0027;
-    color: #ffffff;
-    border-radius: 0.2em;
+    color: #fff;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de transição suave na cor de fundo */
 }
 
-#message{
-    color: #ffffff;
-    text-align: center;
-    font-size:  1em;
+.popup button:hover {
+    background-color: #0a0027f1; /* Cor de fundo ao passar o mouse */
 }
+
+#new-game {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    padding: 1em 0;
+    border-radius: 8px;
+    background-color: #0a0027;
+    width: 25%;
+    height: 15%;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+}
+
+#new-game:hover {
+    background-color: #0a0027dc;
+}
+
+
+#message {
+    text-align: center; /* Centralizar o texto dentro do elemento */
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px; /* Espaço entre a mensagem e o botão */
+}
+
+#new-game {
+    display: block; /* Tornar o botão um elemento de bloco para ocupar a largura disponível */
+    width: 100%; /* Ocupar toda a largura disponível */
+    max-width: 300px; /* Largura máxima para evitar que o botão fique muito largo */
+    margin: 0 auto; /* Centralizar o botão horizontalmente */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0a0027;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de transição suave na cor de fundo */
+}
+
+#new-game:hover {
+    background-color: #0a0027ee; /* Cor de fundo ao passar o mouse */
+}
+
 
 .popup.hide{
     display: none;
