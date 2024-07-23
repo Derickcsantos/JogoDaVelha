@@ -41,18 +41,21 @@ html{
 }
 
 #restart{
-    font-size: 1.3em;
+    font-size: 1.2em; /* Tamanho de fonte responsivo */
     margin-top: 1.5em;
-    padding: 1em 0;
+    padding: 1em 0.5em;  /* Preenchimento responsivo */
     border-radius: 8px;
     background-color: #0a0027;
-    width: 25%;
+    width: 50%;
+    max-width: 150px; /* Largura máxima responsiva */
     height: 15%;
     color: #ffffff;
     border: none;
     position: relative;
-    margin: 1.5em auto 0 auto;
+    margin: 1em auto 0 auto; /* Margem responsiva */
     display: block;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
 }
 
 .popup {
